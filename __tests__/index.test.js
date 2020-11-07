@@ -22,7 +22,11 @@ describe('hungryDogFunction', ()=>{
     it('returns weight * x based on age and weight', ()=>{
         expect(functions.hungryDog(15, 1)).toBe(0.44999999999999996);
     })
+    it('returns puppy weight * x based on age and weight', ()=>{
+        expect(functions.hungryDog(15, .8)).toBe(0.75);
+    })
 });
+    
 describe('gameFunction', ()=>{
     it('return win, lose or tie', ()=>{
         expect(functions.game('rock', 'scissors')).toBe('you win!');

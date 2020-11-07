@@ -18,6 +18,12 @@ Do the following:
    HINT: no function required
 */
 
+let votingAge= 18;
+  if ( votingAge === 18){
+  console.log(true)
+} else {
+  console.log(false)  
+}
 
 
 /*
@@ -30,9 +36,13 @@ Do the following:
 
    HINT: no function required
 */
-
-
-
+let var1 = 1
+let var2 = 2
+  if (var1 < 2){
+    console.log(var1 + var2)
+  }
+ 
+    
 
 
 /*
@@ -45,9 +55,12 @@ Do the following:
 
    HINT: look up the Number method
 */
-
-
-
+let stringNum = "1999"
+  if(1 === 1){
+    console.log(parseInt(stringNum));
+  }
+  
+  
 
 /*
 Task 1d - Multiply
@@ -59,7 +72,8 @@ Do the following:
 */
 
 function multiply(a,b){
-    return a * b;  }
+    return a * b; 
+   }
 
 
 
@@ -106,9 +120,34 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
-  }
+function hungryDog(weight, age) {
+  let calculatedFeedAmount = 0;
+
+  if (age < 1) {
+      // cal. puppy weight
+      if (age <= .4) {
+        calculatedFeedAmount = weight * .10;
+      } else if (age <= .8) {
+        calculatedFeedAmount = weight * .05;
+      } else {
+        calculatedFeedAmount = weight * .04;
+      }
+  } else {
+      // cal. adult weight
+      
+      if (weight <= 5) {
+        calculatedFeedAmount = weight * .05;
+      } else if (weight <= 10) {
+        calculatedFeedAmount = weight *.04;
+      } else if (weight <= 15) {
+        calculatedFeedAmount = weight * .03;
+      } else {
+        calculatedFeedAmount = weight * .02;
+      }
+    }
+    console.log('calculatedFeedAmount ' + calculatedFeedAmount)
+  return calculatedFeedAmount;
+}
 
 
 
